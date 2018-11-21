@@ -1,0 +1,33 @@
+#clock{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 90px;
+	padding-top: 280px;
+	padding-left: 60px;
+	color: white;
+}
+
+#circle{
+	height: 650px;
+	width: 650px;
+	background-color: black;
+	margin: auto;
+	margin-top: 20px;
+	border-width: 50px;
+	border-color: red;
+	border-radius: 50%;
+	border-style: solid;
+	animation-name: changingcolors;
+	animation-duration: 30s;
+	animation-iteration-count: infinite; 
+}
+
+
+@keyframes changingcolors {
+	0% {border-color: #ff5e5e}
+	17% {border-color: #ffbb5e}
+	34% {border-color: #eaff66}
+	51% {border-color: #96ff84}
+	68% {border-color: #83b5ff}
+	85% {border-color: #cbb2f7}
+	100% {border-color: #ff5e5e}
+}

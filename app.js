@@ -26,10 +26,6 @@ function tellTime(){
 	var currentTime = h + ':' + m + ':' + s + ' ' + daynight; /** puts all variables together **/
 
 	document.getElementById('clock').innerText = currentTime;
-
-	document.getElementById('clock').textContent = currentTime;
-
-	setTimeout(tellTime, 1000); /**executes code every second to update time**/
 }
 
-tellTime();
+setInterval(tellTime, 0); /**executes code every second to update time**/
